@@ -19,7 +19,7 @@ namespace AmbulanceRescueSystem._5.DataLayer.UserDetails
                 using (SqlConnection con = new SqlConnection(ConnectSql.GetConnectionString()))
                 {
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("INSERT INTO Register (FirstName,LastName,Email,Mobile,UserName,Password) Values (@FirstName,@LastName,@Email,@Mobile,@UserName,@Password)", con);
+                    SqlCommand cmd = new SqlCommand("INSERT INTO Register (FirstName,LastName,Email,MobileNumber,UserName,Password) Values (@FirstName,@LastName,@Email,@Mobile,@UserName,@Password)", con);
                     cmd.Parameters.AddWithValue("@FirstName", user.FirstName);
                     cmd.Parameters.AddWithValue("@LastName", user.LastName);
                     cmd.Parameters.AddWithValue("@Email", user.Email);

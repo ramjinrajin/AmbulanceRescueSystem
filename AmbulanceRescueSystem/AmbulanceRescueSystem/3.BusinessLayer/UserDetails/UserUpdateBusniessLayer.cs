@@ -24,9 +24,9 @@ namespace AmbulanceRescueSystem._3.BusinessLayer.UserDetails
             else if (ObjRegUSer.FirstName == null || ObjRegUSer.FirstName=="NULL")
             {
                 IsValidationOK = false;
-                ResponseMessage = "MObile no is less than 10 digit";
+                ResponseMessage = "invalid name";
             }
-            else if (ObjRegUSer.Mobile == 0 || ObjRegUSer.Mobile.ToString().Length == 10)
+            else if (ObjRegUSer.Mobile == 0 || ObjRegUSer.Mobile.ToString().Length < 10)
             {
                 IsValidationOK = false;
                 ResponseMessage = "MObile no is less than 10 digit";

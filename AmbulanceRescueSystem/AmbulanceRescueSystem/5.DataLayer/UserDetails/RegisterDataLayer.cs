@@ -27,7 +27,7 @@ namespace AmbulanceRescueSystem._5.DataLayer.UserDetails
                         User.FirstName = rdr["FirstName"].ToString();
                         User.LastName = rdr["LastName"].ToString();
                         User.Email = rdr["Email"].ToString();
-                        User.Mobile = Convert.ToInt64(rdr["Mobile"]);
+                        User.Mobile = Convert.ToInt64(rdr["MobileNumber"]);
                         User.UserName = rdr["UserName"].ToString();
                         listUser.Add(User);
 
