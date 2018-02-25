@@ -10,6 +10,7 @@ namespace AmbulanceRescueSystem.Infrastructure
     {
        public static string GetConnectionString()
        {
+           //Ramjin
            //Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\HeeraUber.mdf;Integrated Security=True
            return "Data Source=.;Initial Catalog=AmbulanceRescue;Integrated Security=True";
        }
