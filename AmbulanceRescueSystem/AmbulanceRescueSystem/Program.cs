@@ -1,4 +1,5 @@
-﻿using AmbulanceRescueSystem._1.PresentationLayer.UserDetails;
+﻿using AmbulanceRescueSystem._1.PresentationLayer;
+using AmbulanceRescueSystem._1.PresentationLayer.UserDetails;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace AmbulanceRescueSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new loadUpdate());
+            Application.Run(new AddVechicle());
         }
     }
 }

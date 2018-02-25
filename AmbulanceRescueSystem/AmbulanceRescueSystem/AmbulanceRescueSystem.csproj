@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="1.PresentationLayer\AddVechicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.PresentationLayer\AddVechicle.Designer.cs">
+      <DependentUpon>AddVechicle.cs</DependentUpon>
+    </Compile>
     <Compile Include="1.PresentationLayer\loadUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,9 @@
     <Compile Include="Infrastructure\ConnectSql.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="1.PresentationLayer\AddVechicle.resx">
+      <DependentUpon>AddVechicle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="1.PresentationLayer\UpdateDetails.resx">
       <DependentUpon>UpdateDetails.cs</DependentUpon>
     </EmbeddedResource>
