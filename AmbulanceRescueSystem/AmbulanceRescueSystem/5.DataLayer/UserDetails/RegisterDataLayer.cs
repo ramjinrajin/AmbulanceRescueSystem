@@ -17,7 +17,7 @@ namespace AmbulanceRescueSystem._5.DataLayer.UserDetails
             using (SqlConnection con = new SqlConnection(ConnectSql.GetConnectionString()))
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select*from Register", con);
+                SqlCommand cmd = new SqlCommand("select*from OwnerRegistration", con);
                 SqlDataReader rdr = cmd.ExecuteReader();
                 if (rdr.HasRows)
                 {

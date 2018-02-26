@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnAddHospital = new System.Windows.Forms.Button();
+            this.txtAmbulanceNo = new System.Windows.Forms.TextBox();
+            this.txtType = new System.Windows.Forms.TextBox();
+            this.txtLocation = new System.Windows.Forms.TextBox();
+            this.txtHospitalName = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,49 +45,49 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // btnAddHospital
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(104, 225);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 38);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Add Hospital";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnAddHospital.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnAddHospital.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddHospital.ForeColor = System.Drawing.Color.White;
+            this.btnAddHospital.Location = new System.Drawing.Point(104, 225);
+            this.btnAddHospital.Name = "btnAddHospital";
+            this.btnAddHospital.Size = new System.Drawing.Size(162, 38);
+            this.btnAddHospital.TabIndex = 12;
+            this.btnAddHospital.Text = "Add Hospital";
+            this.btnAddHospital.UseVisualStyleBackColor = false;
             // 
-            // textBox4
+            // txtAmbulanceNo
             // 
-            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(169, 161);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(150, 26);
-            this.textBox4.TabIndex = 9;
+            this.txtAmbulanceNo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAmbulanceNo.Location = new System.Drawing.Point(169, 161);
+            this.txtAmbulanceNo.Name = "txtAmbulanceNo";
+            this.txtAmbulanceNo.Size = new System.Drawing.Size(150, 26);
+            this.txtAmbulanceNo.TabIndex = 9;
             // 
-            // textBox3
+            // txtType
             // 
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(169, 129);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(150, 26);
-            this.textBox3.TabIndex = 8;
+            this.txtType.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtType.Location = new System.Drawing.Point(169, 129);
+            this.txtType.Name = "txtType";
+            this.txtType.Size = new System.Drawing.Size(150, 26);
+            this.txtType.TabIndex = 8;
             // 
-            // textBox2
+            // txtLocation
             // 
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(169, 90);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(150, 26);
-            this.textBox2.TabIndex = 7;
+            this.txtLocation.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLocation.Location = new System.Drawing.Point(169, 90);
+            this.txtLocation.Name = "txtLocation";
+            this.txtLocation.Size = new System.Drawing.Size(150, 26);
+            this.txtLocation.TabIndex = 7;
             // 
-            // textBox1
+            // txtHospitalName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(169, 44);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 26);
-            this.textBox1.TabIndex = 6;
+            this.txtHospitalName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHospitalName.Location = new System.Drawing.Point(169, 44);
+            this.txtHospitalName.Name = "txtHospitalName";
+            this.txtHospitalName.Size = new System.Drawing.Size(150, 26);
+            this.txtHospitalName.TabIndex = 6;
             // 
             // label7
             // 
@@ -134,11 +134,11 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.btnAddHospital);
+            this.panel2.Controls.Add(this.txtAmbulanceNo);
+            this.panel2.Controls.Add(this.txtType);
+            this.panel2.Controls.Add(this.txtLocation);
+            this.panel2.Controls.Add(this.txtHospitalName);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
@@ -198,11 +198,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnAddHospital;
+        private System.Windows.Forms.TextBox txtAmbulanceNo;
+        private System.Windows.Forms.TextBox txtType;
+        private System.Windows.Forms.TextBox txtLocation;
+        private System.Windows.Forms.TextBox txtHospitalName;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
