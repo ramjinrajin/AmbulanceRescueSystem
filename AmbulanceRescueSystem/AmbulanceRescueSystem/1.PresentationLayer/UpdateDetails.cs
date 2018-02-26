@@ -53,5 +53,12 @@ namespace AmbulanceRescueSystem._1.PresentationLayer
            string Result= objAppLayer.UpdateUser(objRegUSer);
            MessageBox.Show(Result);
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }
