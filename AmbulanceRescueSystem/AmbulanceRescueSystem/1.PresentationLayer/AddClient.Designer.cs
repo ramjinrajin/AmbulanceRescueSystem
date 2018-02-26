@@ -56,6 +56,7 @@
             this.btnAddHospital.TabIndex = 12;
             this.btnAddHospital.Text = "Add Hospital";
             this.btnAddHospital.UseVisualStyleBackColor = false;
+            this.btnAddHospital.Click += new System.EventHandler(this.btnAddHospital_Click);
             // 
             // txtAmbulanceNo
             // 
