@@ -16,5 +16,15 @@ namespace AmbulanceRescueSystem._1.PresentationLayer
         {
             InitializeComponent();
         }
+
+        private void btnAddDriver_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddVechicle_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

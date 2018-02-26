@@ -103,6 +103,7 @@
             this.btnAddDriver.TabIndex = 12;
             this.btnAddDriver.Text = "Add driver";
             this.btnAddDriver.UseVisualStyleBackColor = false;
+            this.btnAddDriver.Click += new System.EventHandler(this.btnAddDriver_Click);
             // 
             // combAddress
             // 
@@ -240,10 +241,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(514, 528);
+            this.ClientSize = new System.Drawing.Size(505, 522);
             this.Controls.Add(this.panel1);
             this.Name = "AddVechicle";
             this.Text = "AddVechicle";
+            this.Load += new System.EventHandler(this.AddVechicle_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
