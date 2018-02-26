@@ -18,7 +18,7 @@ namespace AmbulanceRescueSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AddVechicle());
+            Application.Run(new Registration());
         }
     }
 }

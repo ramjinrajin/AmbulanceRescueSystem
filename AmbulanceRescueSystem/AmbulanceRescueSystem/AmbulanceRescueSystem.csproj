@@ -126,6 +126,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\AddDriver.sql" />
     <Content Include="App_Data\ownerRegistration.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
