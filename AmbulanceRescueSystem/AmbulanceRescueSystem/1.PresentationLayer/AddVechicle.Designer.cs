@@ -230,9 +230,9 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Location = new System.Drawing.Point(3, -3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(484, 90);
+            this.label1.Size = new System.Drawing.Size(484, 93);
             this.label1.TabIndex = 0;
             this.label1.Text = "ADD DRIVER";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -244,6 +244,7 @@
             this.ClientSize = new System.Drawing.Size(505, 522);
             this.Controls.Add(this.panel1);
             this.Name = "AddVechicle";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "AddVechicle";
             this.Load += new System.EventHandler(this.AddVechicle_Load);
             this.panel1.ResumeLayout(false);

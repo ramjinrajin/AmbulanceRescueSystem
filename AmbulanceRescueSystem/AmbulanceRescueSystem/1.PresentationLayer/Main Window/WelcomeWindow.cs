@@ -21,5 +21,16 @@ namespace AmbulanceRescueSystem._1.PresentationLayer.Main_Window
         {
 
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AddVechicle veh = new AddVechicle();
+            veh.ShowDialog();
+        }
     }
 }
