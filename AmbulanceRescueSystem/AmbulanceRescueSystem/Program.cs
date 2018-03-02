@@ -1,4 +1,5 @@
 ﻿using AmbulanceRescueSystem._1.PresentationLayer;
+using AmbulanceRescueSystem._1.PresentationLayer.Main_Window;
 using AmbulanceRescueSystem._1.PresentationLayer.UserDetails;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,7 @@ namespace AmbulanceRescueSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AddClient());
+            Application.Run(new WelcomeWindow());
         }
     }
 }

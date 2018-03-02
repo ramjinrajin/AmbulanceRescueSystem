@@ -62,6 +62,12 @@
     <Compile Include="1.PresentationLayer\loadUpdate.Designer.cs">
       <DependentUpon>loadUpdate.cs</DependentUpon>
     </Compile>
+    <Compile Include="1.PresentationLayer\Main Window\WelcomeWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.PresentationLayer\Main Window\WelcomeWindow.Designer.cs">
+      <DependentUpon>WelcomeWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="1.PresentationLayer\OwnerLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     <EmbeddedResource Include="1.PresentationLayer\AddVechicle.resx">
       <DependentUpon>AddVechicle.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="1.PresentationLayer\Main Window\WelcomeWindow.resx">
+      <DependentUpon>WelcomeWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="1.PresentationLayer\OwnerLogin.resx">
       <DependentUpon>OwnerLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +133,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -142,6 +152,25 @@
     <Content Include="App_Data\AddDriver.sql" />
     <Content Include="App_Data\AddHospital.sql" />
     <Content Include="App_Data\ownerRegistration.sql" />
+    <None Include="Resources\transport1.png" />
+    <None Include="Resources\Iconsmind-Outline-Business-Mens.ico" />
+    <None Include="Resources\Iconsmind-Outline-Bus.ico" />
+    <None Include="Resources\Iconsmind-Outline-Block-Window.ico" />
+    <None Include="Resources\Iconsmind-Outline-Block-Cloud.ico" />
+    <None Include="Resources\Iconsmind-Outline-Bird-DeliveringLetter.ico" />
+    <None Include="Resources\Iconsmind-Outline-Betvibes.ico" />
+    <None Include="Resources\Iconsmind-Outline-Assistant.ico" />
+    <None Include="Resources\Iconsmind-Outline-Approved-Window.ico" />
+    <None Include="Resources\Iconsmind-Outline-Ambulance.ico" />
+    <None Include="Resources\Iconsmind-Outline-Administrator.ico" />
+    <None Include="Resources\Iconsmind-Outline-Add-User.ico" />
+    <None Include="Resources\Iconsmind-Outline-Add-File.ico" />
+    <None Include="Resources\Iconsmind-Outline-Add.ico" />
+    <None Include="Resources\Ambul1.jpg" />
+    <None Include="Resources\2502188-ambulance-wallpapers1.jpg" />
+    <None Include="Resources\transport.png" />
+    <None Include="Resources\Ambul.jpg" />
+    <None Include="Resources\2502188-ambulance-wallpapers.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
