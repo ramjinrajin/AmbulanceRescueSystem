@@ -37,6 +37,31 @@ namespace AmbulanceRescueSystem._5.DataLayer.UserDetails
             }
             return listUser;
         }
+
+
+        public bool UserExistingCheck(string EmailId)
+        {
+            using(SqlConnection con = new SqlConnection())
+            {
+                try
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand("select * from OwnerRegistration Where Email=@Email", con);
+                    cmd.Parameters.AddWithValue("@Email", EmailId);
+                    SqlDataReader rdr = cmd.ExecuteReader();
+                    return rdr.HasRows;
+                }
+                catch (Exception)
+                {
+                    
+                    throw;
+                }
+                finally
+                {
+                    con.Close();
+                }
+            }
+        }
         
     }
 }

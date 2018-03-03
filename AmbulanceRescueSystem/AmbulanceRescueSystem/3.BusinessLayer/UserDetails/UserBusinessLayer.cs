@@ -1,5 +1,6 @@
 ﻿using AmbulanceRescueSystem._2.ApplicationLayer.UserDetails;
 using AmbulanceRescueSystem._4.DomainLayer.UserDetails;
+using AmbulanceRescueSystem._5.DataLayer.UserDetails;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,6 +31,11 @@ namespace AmbulanceRescueSystem._3.BusinessLayer.UserDetails
                 IsValidationOK = false;
                 ResponseMessage = "MObile no is less than 10 digit";
             }
+            else if (UserAlreadyExists(user.Email))
+            {
+                IsValidationOK = false;
+                ResponseMessage = "User already exists";
+            }
             else
             {
                 IsValidationOK = true;
@@ -43,12 +49,20 @@ namespace AmbulanceRescueSystem._3.BusinessLayer.UserDetails
             {
                 UserRegDomain domain = new UserRegDomain();
                 bool response = domain.SavetoDatabase(user);
-                 
+
 
             }
 
             return ResponseMessage;
-              
+
         }
+
+        private bool UserAlreadyExists(string Email)
+        {
+            RegisterDataLayer ObjDataLayer = new RegisterDataLayer();
+            return ObjDataLayer.UserExistingCheck(Email);
+        }
+
+
     }
 }
