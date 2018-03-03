@@ -23,7 +23,7 @@ namespace AmbulanceRescueSystem._5.DataLayer.UserDetails
                 {
                     con.Open();
 
-                    SqlCommand cmd = new SqlCommand("UPDATE REGISTER SET FIRSTNAME=@FirstName,LASTNAME=@LastName,Email=@Email,MobileNumber=@Mobile,UserName=@UserName Where Email=@Email",con);
+                    SqlCommand cmd = new SqlCommand("UPDATE REGISTER SET FIRSTNAME=@FirstName,LASTNAME=@LastName,Email=@Email,Mobile=@Mobile,UserName=@UserName Where Email=@Email",con);
                     cmd.Parameters.AddWithValue("@FirstName", ObjRegObject.FirstName);
                     cmd.Parameters.AddWithValue("@LastName", ObjRegObject.LastName);
                     cmd.Parameters.AddWithValue("@Email", ObjRegObject.Email);

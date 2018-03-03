@@ -84,10 +84,13 @@
     <Compile Include="2.ApplicationLayer\UserDetails\RegDetails.cs" />
     <Compile Include="2.ApplicationLayer\UserDetails\RegisterAppLayer.cs" />
     <Compile Include="2.ApplicationLayer\UserDetails\UpdateUserDetailsAppLayer.cs" />
+    <Compile Include="2.ApplicationLayer\UserDetails\UserDeleteApplication.cs" />
     <Compile Include="3.BusinessLayer\UserDetails\AddClientBusinessLayer.cs" />
     <Compile Include="3.BusinessLayer\UserDetails\UserBusinessLayer.cs" />
+    <Compile Include="3.BusinessLayer\UserDetails\UserDeleteBusniessLayer.cs" />
     <Compile Include="3.BusinessLayer\UserDetails\UserUpdateBusniessLayer.cs" />
     <Compile Include="4.DomainLayer\UserDetails\AddClientDomainLayer.cs" />
+    <Compile Include="4.DomainLayer\UserDetails\UserDeleteDomain.cs" />
     <Compile Include="4.DomainLayer\UserDetails\UserRegDomain.cs" />
     <Compile Include="4.DomainLayer\UserDetails\UserUpdateDomain.cs" />
     <Compile Include="5.DataLayer\UserDetails\AddClientDataLayer.cs" />

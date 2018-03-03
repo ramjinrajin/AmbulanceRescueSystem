@@ -19,7 +19,7 @@ namespace AmbulanceRescueSystem._5.DataLayer.UserDetails
               {
                   con.Open();
 
-                  SqlCommand cmd = new SqlCommand("DELETE FROM REGISTER  Where Email=@Email", con);
+                  SqlCommand cmd = new SqlCommand("DELETE FROM OwnerRegistration  Where Email=@Email", con);
                   cmd.Parameters.AddWithValue("@Email", Email);
                   cmd.ExecuteNonQuery();
                   return true;

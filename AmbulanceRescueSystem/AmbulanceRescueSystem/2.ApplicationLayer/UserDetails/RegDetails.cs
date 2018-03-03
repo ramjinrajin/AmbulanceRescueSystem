@@ -18,7 +18,7 @@ namespace AmbulanceRescueSystem._2.ApplicationLayer.UserDetails
         public string Confirm { get; set; }
 
 
-        public bool ImplementBusinessLogics(RegDetails user)
+        public string ImplementBusinessLogics(RegDetails user)
         {
             UserBusinessLayer Business = new UserBusinessLayer();
             return Business.UserVerifyUserDetails(user);

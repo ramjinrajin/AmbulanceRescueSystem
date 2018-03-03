@@ -26,7 +26,7 @@ namespace AmbulanceRescueSystem._1.PresentationLayer.UserDetails
             objRegObject.FirstName = UserGridView.SelectedRows[0].Cells["ColFirstName"].Value.ToString();
             objRegObject.LastName = UserGridView.SelectedRows[0].Cells["ColLastName"].Value.ToString();
             objRegObject.Email = UserGridView.SelectedRows[0].Cells["ColEmail"].Value.ToString();
-            objRegObject.Mobile =Convert.ToInt64(UserGridView.SelectedRows[0].Cells["ColMobile"].Value);
+            objRegObject.Mobile = Convert.ToInt64(UserGridView.SelectedRows[0].Cells["ColMobile"].Value);
             objRegObject.UserName = UserGridView.SelectedRows[0].Cells["ColUserName"].Value.ToString();
 
 
@@ -60,6 +60,10 @@ namespace AmbulanceRescueSystem._1.PresentationLayer.UserDetails
                 UserGridView.ClearSelection();
 
             }
+            else
+            {
+                UserGridView.Rows.Clear();
+            }
         }
 
         private void loadUpdate_Load(object sender, EventArgs e)
@@ -75,7 +79,11 @@ namespace AmbulanceRescueSystem._1.PresentationLayer.UserDetails
         private void button1_Click(object sender, EventArgs e)
         {
             string Email = UserGridView.SelectedRows[0].Cells["ColEmail"].Value.ToString();
-            //
+            UserDeleteApplication applicationDeleteUser = new UserDeleteApplication();
+            string Response = applicationDeleteUser.UserDeleteApp(Email);
+            MessageBox.Show(Response);
+            LoadData();
+
         }
     }
 }

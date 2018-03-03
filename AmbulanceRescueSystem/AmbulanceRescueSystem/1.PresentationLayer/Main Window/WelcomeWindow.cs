@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AmbulanceRescueSystem._1.PresentationLayer.UserDetails;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,13 +25,36 @@ namespace AmbulanceRescueSystem._1.PresentationLayer.Main_Window
 
         private void button9_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             AddVechicle veh = new AddVechicle();
             veh.ShowDialog();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AddClient objClient=  new AddClient();
+            objClient.ShowDialog();
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            loadUpdate UserManage = new loadUpdate();
+            UserManage.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

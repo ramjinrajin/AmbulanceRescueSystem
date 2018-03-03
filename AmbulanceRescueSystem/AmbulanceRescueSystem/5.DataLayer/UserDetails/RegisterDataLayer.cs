@@ -17,7 +17,7 @@ namespace AmbulanceRescueSystem._5.DataLayer.UserDetails
             using (SqlConnection con = new SqlConnection(ConnectSql.GetConnectionString()))
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select*from OwnerRegistration", con);
+                SqlCommand cmd = new SqlCommand("select * from OwnerRegistration", con);
                 SqlDataReader rdr = cmd.ExecuteReader();
                 if (rdr.HasRows)
                 {
@@ -27,7 +27,7 @@ namespace AmbulanceRescueSystem._5.DataLayer.UserDetails
                         User.FirstName = rdr["FirstName"].ToString();
                         User.LastName = rdr["LastName"].ToString();
                         User.Email = rdr["Email"].ToString();
-                        User.Mobile = Convert.ToInt64(rdr["MobileNumber"]);
+                        User.Mobile = Convert.ToInt64(rdr["Mobile"].ToString());
                         User.UserName = rdr["UserName"].ToString();
                         listUser.Add(User);
 

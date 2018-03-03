@@ -10,18 +10,45 @@ namespace AmbulanceRescueSystem._3.BusinessLayer.UserDetails
 {
     public class UserBusinessLayer
     {
-        public bool UserVerifyUserDetails(RegDetails user)
+        public string UserVerifyUserDetails(RegDetails user)
         {
-            if (user.FirstName.Length > 4 && user.LastName.Length > 4)
+
+            string ResponseMessage = "";
+            bool IsValidationOK = false;
+            if (!user.Email.Contains("@"))
             {
-                UserRegDomain domain = new UserRegDomain();
-                bool response = domain.SavetoDatabase(user);
-                return response;
+                IsValidationOK = false;
+                ResponseMessage = "Email Id is not valid";
+            }
+            else if (user.FirstName == null || user.FirstName == "NULL")
+            {
+                IsValidationOK = false;
+                ResponseMessage = "invalid name";
+            }
+            else if (user.Mobile == 0 || user.Mobile.ToString().Length < 10)
+            {
+                IsValidationOK = false;
+                ResponseMessage = "MObile no is less than 10 digit";
             }
             else
             {
-                return false;
+                IsValidationOK = true;
+                ResponseMessage = "Data updated successfully";
             }
+
+
+
+
+            if (IsValidationOK == true)
+            {
+                UserRegDomain domain = new UserRegDomain();
+                bool response = domain.SavetoDatabase(user);
+                 
+
+            }
+
+            return ResponseMessage;
+              
         }
     }
 }

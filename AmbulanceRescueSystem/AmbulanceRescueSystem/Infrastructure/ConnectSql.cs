@@ -12,7 +12,8 @@ namespace AmbulanceRescueSystem.Infrastructure
        {
            //Ramjin
            //Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\HeeraUber.mdf;Integrated Security=True
-           return "Data Source=.;Initial Catalog=AmbulanceRescue;Integrated Security=True";
+          // return "Data Source=.;Initial Catalog=AmbulanceRescue;Integrated Security=True";
+           return @"workstation id=AmbResDatabase.mssql.somee.com;packet size=4096;user id=AmbRes_SQLLogin_1;pwd=7ixayy3tdq;data source=AmbResDatabase.mssql.somee.com;persist security info=False;initial catalog=AmbResDatabase";
        }
     }
 }

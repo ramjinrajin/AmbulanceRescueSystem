@@ -25,27 +25,40 @@ namespace AmbulanceRescueSystem
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            
-            RegDetails user = new RegDetails
+            if(txtFirstName.Text=="")
             {
-                FirstName = txtFirstName.Text,
-                LastName = txtLastName.Text,
-                Email = txtEmail.Text,
-                Mobile = Convert.ToInt64(txtMobile.Text),
-                UserName = txtUserName.Text,
-                Password = txtPassword.Text,
-                Confirm = txtConfirm.Text
-            };
-            bool Response = user.ImplementBusinessLogics(user);
-            if (Response)
-            {
-                MessageBox.Show("Data saved sucessfully");
-
+                WarningFN.Visible = true;
+                WarningFN.Text = "First name is mandatory";
             }
             else
             {
-                MessageBox.Show("Failed to save data");
+                RegDetails user = new RegDetails
+                {
+                    FirstName = txtFirstName.Text,
+                    LastName = txtLastName.Text,
+                    Email = txtEmail.Text,
+                    Mobile = Convert.ToInt64(txtMobile.Text),
+                    UserName = txtUserName.Text,
+                    Password = txtPassword.Text,
+                    Confirm = txtConfirm.Text
+                };
+
+                string Response = user.ImplementBusinessLogics(user);
+                if (Response != "Data updated successfully")
+                {
+
+                    if (Response == "invalid name")
+                    {
+                        WarningFN.Visible = true;
+                        WarningFN.Text = "First name is mandatory";
+                    }
+
+                }
+                MessageBox.Show(Response);
             }
+           
+
+            
         }
 
         private void Registration_Load(object sender, EventArgs e)
@@ -59,6 +72,11 @@ namespace AmbulanceRescueSystem
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
         {
 
         }
