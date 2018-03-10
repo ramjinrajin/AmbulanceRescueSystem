@@ -48,7 +48,9 @@ namespace AmbulanceRescueSystem._5.DataLayer.UserDetails
                     }
                     if (Response == UserAuthResponse.USER_VALID.ToString())
                     {
+                        UserIdentity.username = Username;
                         return "true";
+                     
                     }
                     if (Response == UserAuthResponse.USER_INVALID.ToString())
                     {

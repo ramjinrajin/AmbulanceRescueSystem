@@ -1,4 +1,5 @@
 ﻿using AmbulanceRescueSystem._1.PresentationLayer.UserDetails;
+using AmbulanceRescueSystem.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,15 +22,26 @@ namespace AmbulanceRescueSystem._1.PresentationLayer.Main_Window
 
         private void WelcomeWindow_Load(object sender, EventArgs e)
         {
-           
-           
+            btnAddVehicle.Enabled = true;
+            btnManageVehicle.Enabled = true;
+            if (AppPool.IsAdmin)
+            {
+                btnAddClient.Enabled = true;
+                btnManageClient.Enabled = true;
+            }
+            else
+            {
+                btnAddClient.Enabled = false;
+                btnManageClient.Enabled = false;
+            }
+
         }
 
-     
+
 
         private void button9_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -45,7 +57,7 @@ namespace AmbulanceRescueSystem._1.PresentationLayer.Main_Window
 
         private void button5_Click(object sender, EventArgs e)
         {
-            AddClient objClient=  new AddClient();
+            AddClient objClient = new AddClient();
             objClient.ShowDialog();
 
         }
@@ -68,6 +80,6 @@ namespace AmbulanceRescueSystem._1.PresentationLayer.Main_Window
             objLogin.Show();
         }
 
-        
+
     }
 }

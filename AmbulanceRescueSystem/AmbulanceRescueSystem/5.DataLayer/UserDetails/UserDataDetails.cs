@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using AmbulanceRescueSystem.Infrastructure;
 using System.Web.Security;
- 
+
 
 namespace AmbulanceRescueSystem._5.DataLayer.UserDetails
 {
-  public  class UserDataDetails
+    public class UserDataDetails
     {
         public bool SaveData(RegDetails user)
         {
@@ -21,20 +21,33 @@ namespace AmbulanceRescueSystem._5.DataLayer.UserDetails
             {
                 using (SqlConnection con = new SqlConnection(ConnectSql.GetConnectionString()))
                 {
-                    con.Open();
-                    SqlCommand cmd = new SqlCommand("SpAddUser", con);
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@FirstName", user.FirstName);
-                    cmd.Parameters.AddWithValue("@LastName", user.LastName);
-                    cmd.Parameters.AddWithValue("@Email", user.Email);
-                    cmd.Parameters.AddWithValue("@Mobile", user.Mobile);
-                    cmd.Parameters.AddWithValue("@UserName", user.UserName);
-                    cmd.Parameters.AddWithValue("@Password", EncryptedPassword);
+                    try
+                    {
 
-                    cmd.ExecuteNonQuery();
-                    con.Close();
+                        con.Open();
+                        SqlCommand cmd = new SqlCommand("SpAddUser", con);
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@FirstName", user.FirstName);
+                        cmd.Parameters.AddWithValue("@LastName", user.LastName);
+                        cmd.Parameters.AddWithValue("@Email", user.Email);
+                        cmd.Parameters.AddWithValue("@Mobile", user.Mobile);
+                        cmd.Parameters.AddWithValue("@UserName", user.UserName);
+                        cmd.Parameters.AddWithValue("@Password", EncryptedPassword);
+                        cmd.ExecuteNonQuery();
+                        return true;
+                    }
+                    catch (Exception)
+                    {
+
+                        throw;
+                    }
+                    finally
+                    {
+
+                        con.Close();
+                    }
                 }
-                return true;
+
             }
             catch (Exception ex)
             {
@@ -42,6 +55,8 @@ namespace AmbulanceRescueSystem._5.DataLayer.UserDetails
                 return false;
             }
         }
+
+
 
 
 

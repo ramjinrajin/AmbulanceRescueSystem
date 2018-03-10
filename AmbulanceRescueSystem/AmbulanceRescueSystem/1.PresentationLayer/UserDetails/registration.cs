@@ -89,5 +89,16 @@ namespace AmbulanceRescueSystem
         {
 
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Login objLogin = new Login();
+            objLogin.Show();
+        }
     }
 }

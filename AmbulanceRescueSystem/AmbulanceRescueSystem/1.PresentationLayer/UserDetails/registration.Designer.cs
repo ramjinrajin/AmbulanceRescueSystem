@@ -48,6 +48,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.OWNER = new System.Windows.Forms.Label();
+            this.button10 = new System.Windows.Forms.Button();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -75,7 +77,7 @@
             this.btnRegister.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnRegister.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnRegister.Location = new System.Drawing.Point(124, 404);
+            this.btnRegister.Location = new System.Drawing.Point(129, 382);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(138, 37);
             this.btnRegister.TabIndex = 2;
@@ -199,6 +201,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Controls.Add(this.WarningFN);
             this.panel1.Controls.Add(this.txtFirstName);
             this.panel1.Controls.Add(this.txtLastName);
@@ -271,11 +274,34 @@
             this.OWNER.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.OWNER.UseCompatibleTextRendering = true;
             // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.Red;
+            this.button10.Location = new System.Drawing.Point(423, -1);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(34, 30);
+            this.button10.TabIndex = 18;
+            this.button10.Text = "X";
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(160, 431);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(69, 13);
+            this.linkLabel1.TabIndex = 16;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Back to login";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(456, 654);
+            this.Controls.Add(this.button10);
             this.Controls.Add(this.OWNER);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -313,6 +339,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label OWNER;
         private System.Windows.Forms.Label WarningFN;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 

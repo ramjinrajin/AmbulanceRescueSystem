@@ -122,6 +122,7 @@
     <Compile Include="5.DataLayer\UserDetails\UserDeleteLayer.cs" />
     <Compile Include="5.DataLayer\UserDetails\UserUpdateService.cs" />
     <Compile Include="Infrastructure\ConnectSql.cs" />
+    <Compile Include="Infrastructure\UserIdentity.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="1.PresentationLayer\AddClient.resx">

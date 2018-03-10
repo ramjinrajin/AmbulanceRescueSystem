@@ -40,10 +40,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnManageVehicle = new System.Windows.Forms.Button();
+            this.btnManageClient = new System.Windows.Forms.Button();
+            this.btnAddClient = new System.Windows.Forms.Button();
+            this.btnAddVehicle = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -158,10 +158,10 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.panel3.Controls.Add(this.button8);
-            this.panel3.Controls.Add(this.button7);
-            this.panel3.Controls.Add(this.button6);
-            this.panel3.Controls.Add(this.button5);
-            this.panel3.Controls.Add(this.button4);
+            this.panel3.Controls.Add(this.btnManageVehicle);
+            this.panel3.Controls.Add(this.btnManageClient);
+            this.panel3.Controls.Add(this.btnAddClient);
+            this.panel3.Controls.Add(this.btnAddVehicle);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 546);
             this.panel3.Name = "panel3";
@@ -190,67 +190,67 @@
             this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btnManageVehicle
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
-            this.button7.Enabled = false;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(761, 0);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(227, 155);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "Manage Vehicle";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.btnManageVehicle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
+            this.btnManageVehicle.Enabled = false;
+            this.btnManageVehicle.FlatAppearance.BorderSize = 0;
+            this.btnManageVehicle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManageVehicle.Image = ((System.Drawing.Image)(resources.GetObject("btnManageVehicle.Image")));
+            this.btnManageVehicle.Location = new System.Drawing.Point(761, 0);
+            this.btnManageVehicle.Name = "btnManageVehicle";
+            this.btnManageVehicle.Size = new System.Drawing.Size(227, 155);
+            this.btnManageVehicle.TabIndex = 7;
+            this.btnManageVehicle.Text = "Manage Vehicle";
+            this.btnManageVehicle.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnManageVehicle.UseVisualStyleBackColor = false;
+            this.btnManageVehicle.Click += new System.EventHandler(this.button7_Click);
             // 
-            // button6
+            // btnManageClient
             // 
-            this.button6.Enabled = false;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(495, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(260, 153);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "Manage Client";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.btnManageClient.Enabled = false;
+            this.btnManageClient.FlatAppearance.BorderSize = 0;
+            this.btnManageClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManageClient.Image = ((System.Drawing.Image)(resources.GetObject("btnManageClient.Image")));
+            this.btnManageClient.Location = new System.Drawing.Point(495, 3);
+            this.btnManageClient.Name = "btnManageClient";
+            this.btnManageClient.Size = new System.Drawing.Size(260, 153);
+            this.btnManageClient.TabIndex = 6;
+            this.btnManageClient.Text = "Manage Users";
+            this.btnManageClient.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnManageClient.UseVisualStyleBackColor = true;
+            this.btnManageClient.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button5
+            // btnAddClient
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
-            this.button5.Enabled = false;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(250, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(239, 152);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Add Client";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnAddClient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
+            this.btnAddClient.Enabled = false;
+            this.btnAddClient.FlatAppearance.BorderSize = 0;
+            this.btnAddClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddClient.Image = ((System.Drawing.Image)(resources.GetObject("btnAddClient.Image")));
+            this.btnAddClient.Location = new System.Drawing.Point(250, 3);
+            this.btnAddClient.Name = "btnAddClient";
+            this.btnAddClient.Size = new System.Drawing.Size(239, 152);
+            this.btnAddClient.TabIndex = 5;
+            this.btnAddClient.Text = "Add Client";
+            this.btnAddClient.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAddClient.UseVisualStyleBackColor = false;
+            this.btnAddClient.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button4
+            // btnAddVehicle
             // 
-            this.button4.Enabled = false;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(0, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(244, 153);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Add Vehicle";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnAddVehicle.Enabled = false;
+            this.btnAddVehicle.FlatAppearance.BorderSize = 0;
+            this.btnAddVehicle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddVehicle.Image = ((System.Drawing.Image)(resources.GetObject("btnAddVehicle.Image")));
+            this.btnAddVehicle.Location = new System.Drawing.Point(0, 3);
+            this.btnAddVehicle.Name = "btnAddVehicle";
+            this.btnAddVehicle.Size = new System.Drawing.Size(244, 153);
+            this.btnAddVehicle.TabIndex = 4;
+            this.btnAddVehicle.Text = "Add Vehicle";
+            this.btnAddVehicle.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAddVehicle.UseVisualStyleBackColor = true;
+            this.btnAddVehicle.Click += new System.EventHandler(this.button4_Click);
             // 
             // pictureBox1
             // 
@@ -297,10 +297,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnManageVehicle;
+        private System.Windows.Forms.Button btnManageClient;
+        private System.Windows.Forms.Button btnAddClient;
+        private System.Windows.Forms.Button btnAddVehicle;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Panel panel4;
