@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -62,6 +63,12 @@
     <Compile Include="1.PresentationLayer\loadUpdate.Designer.cs">
       <DependentUpon>loadUpdate.cs</DependentUpon>
     </Compile>
+    <Compile Include="1.PresentationLayer\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.PresentationLayer\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="1.PresentationLayer\Main Window\WelcomeWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +81,12 @@
     <Compile Include="1.PresentationLayer\OwnerLogin.Designer.cs">
       <DependentUpon>OwnerLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="1.PresentationLayer\RegisterUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.PresentationLayer\RegisterUser.Designer.cs">
+      <DependentUpon>RegisterUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="1.PresentationLayer\UpdateDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,7 +98,9 @@
     <Compile Include="2.ApplicationLayer\UserDetails\RegisterAppLayer.cs" />
     <Compile Include="2.ApplicationLayer\UserDetails\UpdateUserDetailsAppLayer.cs" />
     <Compile Include="2.ApplicationLayer\UserDetails\UserDeleteApplication.cs" />
+    <Compile Include="2.ApplicationLayer\UserDetails\VehicleDetailsModel.cs" />
     <Compile Include="3.BusinessLayer\UserDetails\AddClientBusinessLayer.cs" />
+    <Compile Include="3.BusinessLayer\UserDetails\DriverBusinessLayer.cs" />
     <Compile Include="3.BusinessLayer\UserDetails\UserBusinessLayer.cs" />
     <Compile Include="3.BusinessLayer\UserDetails\UserDeleteBusniessLayer.cs" />
     <Compile Include="3.BusinessLayer\UserDetails\UserUpdateBusniessLayer.cs" />
@@ -93,8 +108,10 @@
     <Compile Include="4.DomainLayer\UserDetails\UserDeleteDomain.cs" />
     <Compile Include="4.DomainLayer\UserDetails\UserRegDomain.cs" />
     <Compile Include="4.DomainLayer\UserDetails\UserUpdateDomain.cs" />
+    <Compile Include="5.DataLayer\DriverDetails\DriverDataLayer.cs" />
     <Compile Include="5.DataLayer\UserDetails\AddClientDataLayer.cs" />
     <Compile Include="5.DataLayer\UserDetails\RegisterDataLayer.cs" />
+    <Compile Include="5.DataLayer\UserDetails\SecurityProtocol.cs" />
     <Compile Include="5.DataLayer\UserDetails\UserDataDetails.cs" />
     <Compile Include="1.PresentationLayer\UserDetails\registration.cs">
       <SubType>Form</SubType>
@@ -113,11 +130,17 @@
     <EmbeddedResource Include="1.PresentationLayer\AddVechicle.resx">
       <DependentUpon>AddVechicle.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="1.PresentationLayer\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="1.PresentationLayer\Main Window\WelcomeWindow.resx">
       <DependentUpon>WelcomeWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="1.PresentationLayer\OwnerLogin.resx">
       <DependentUpon>OwnerLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.PresentationLayer\RegisterUser.resx">
+      <DependentUpon>RegisterUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="1.PresentationLayer\UpdateDetails.resx">
       <DependentUpon>UpdateDetails.cs</DependentUpon>
@@ -155,6 +178,9 @@
     <Content Include="App_Data\AddDriver.sql" />
     <Content Include="App_Data\AddHospital.sql" />
     <Content Include="App_Data\ownerRegistration.sql" />
+    <Content Include="App_Data\SpAddVehicle.sql" />
+    <Content Include="App_Data\SpAuthenticateUser.sql" />
+    <Content Include="App_Data\SpAddUser.sql" />
     <None Include="Resources\transport1.png" />
     <None Include="Resources\Iconsmind-Outline-Business-Mens.ico" />
     <None Include="Resources\Iconsmind-Outline-Bus.ico" />

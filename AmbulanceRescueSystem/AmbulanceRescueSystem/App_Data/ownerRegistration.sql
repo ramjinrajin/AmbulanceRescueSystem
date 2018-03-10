@@ -26,3 +26,14 @@ GO
 SET ANSI_PADDING OFF
 GO
 
+--We added more colomns
+ALTER TABLE OwnerRegistration
+ADD [IsActive] [int] Default 0,
+	[CreatedDate] [date] Default GETDATE(),
+	[ActivationCode] [varchar](100) Default NEWID(),
+	[RetryCount] [int] NULL Default 0,
+	[IsBlocked] [int] NULL Default 0,
+	[BlockedDate] [date] NULL,
+	[IsDeleted] [int] NULL Default 0,
+	[LoggedCounts] [int] NULL Default 0,
+	[IsPasswordExpired] [int] NULL Default 0

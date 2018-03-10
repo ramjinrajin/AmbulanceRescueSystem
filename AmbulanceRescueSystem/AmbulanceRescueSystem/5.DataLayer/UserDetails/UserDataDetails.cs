@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AmbulanceRescueSystem.Infrastructure;
+using System.Web.Security;
+ 
 
 namespace AmbulanceRescueSystem._5.DataLayer.UserDetails
 {
@@ -14,18 +16,20 @@ namespace AmbulanceRescueSystem._5.DataLayer.UserDetails
     {
         public bool SaveData(RegDetails user)
         {
+            string EncryptedPassword = FormsAuthentication.HashPasswordForStoringInConfigFile(user.Password, "SHA1");
             try
             {
                 using (SqlConnection con = new SqlConnection(ConnectSql.GetConnectionString()))
                 {
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("INSERT INTO OwnerRegistration (FirstName,LastName,Email,Mobile,UserName,Password) Values (@FirstName,@LastName,@Email,@Mobile,@UserName,@Password)", con);
+                    SqlCommand cmd = new SqlCommand("SpAddUser", con);
+                    cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@FirstName", user.FirstName);
                     cmd.Parameters.AddWithValue("@LastName", user.LastName);
                     cmd.Parameters.AddWithValue("@Email", user.Email);
                     cmd.Parameters.AddWithValue("@Mobile", user.Mobile);
                     cmd.Parameters.AddWithValue("@UserName", user.UserName);
-                    cmd.Parameters.AddWithValue("@Password", user.Password);
+                    cmd.Parameters.AddWithValue("@Password", EncryptedPassword);
 
                     cmd.ExecuteNonQuery();
                     con.Close();

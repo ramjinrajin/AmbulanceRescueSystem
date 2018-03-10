@@ -39,7 +39,7 @@ namespace AmbulanceRescueSystem._3.BusinessLayer.UserDetails
             else
             {
                 IsValidationOK = true;
-                ResponseMessage = "Data updated successfully";
+                ResponseMessage = "Congrats!!! Your account is sucessfully registered";
             }
 
 

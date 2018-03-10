@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,8 +21,11 @@ namespace AmbulanceRescueSystem._1.PresentationLayer.Main_Window
 
         private void WelcomeWindow_Load(object sender, EventArgs e)
         {
-
+           
+           
         }
+
+     
 
         private void button9_Click(object sender, EventArgs e)
         {
@@ -56,5 +60,14 @@ namespace AmbulanceRescueSystem._1.PresentationLayer.Main_Window
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login objLogin = new Login();
+            objLogin.Show();
+        }
+
+        
     }
 }

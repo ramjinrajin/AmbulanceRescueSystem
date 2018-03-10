@@ -11,6 +11,10 @@ namespace AmbulanceRescueSystem._5.DataLayer.UserDetails
 {
     public class RegisterDataLayer
     {
+
+        
+
+
         internal List<RegDetails> GetUser()
         {
             List<RegDetails> listUser = new List<RegDetails>();
@@ -41,7 +45,7 @@ namespace AmbulanceRescueSystem._5.DataLayer.UserDetails
 
         public bool UserExistingCheck(string EmailId)
         {
-            using(SqlConnection con = new SqlConnection())
+            using(SqlConnection con = new SqlConnection(ConnectSql.GetConnectionString()))
             {
                 try
                 {

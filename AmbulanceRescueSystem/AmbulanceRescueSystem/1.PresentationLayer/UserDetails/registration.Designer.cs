@@ -56,20 +56,18 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(56, 95);
-            this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label1.Location = new System.Drawing.Point(21, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 46);
+            this.label1.Size = new System.Drawing.Size(73, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "FirstName";
             // 
             // txtFirstName
             // 
             this.txtFirstName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFirstName.Location = new System.Drawing.Point(478, 79);
-            this.txtFirstName.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.txtFirstName.Location = new System.Drawing.Point(179, 33);
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(464, 53);
+            this.txtFirstName.Size = new System.Drawing.Size(176, 26);
             this.txtFirstName.TabIndex = 1;
             // 
             // btnRegister
@@ -77,10 +75,9 @@
             this.btnRegister.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnRegister.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnRegister.Location = new System.Drawing.Point(330, 963);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.btnRegister.Location = new System.Drawing.Point(124, 404);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(368, 89);
+            this.btnRegister.Size = new System.Drawing.Size(138, 37);
             this.btnRegister.TabIndex = 2;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = false;
@@ -90,10 +87,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(54, 244);
-            this.label2.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label2.Location = new System.Drawing.Point(20, 102);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(193, 46);
+            this.label2.Size = new System.Drawing.Size(76, 19);
             this.label2.TabIndex = 3;
             this.label2.Text = "Last Name";
             // 
@@ -101,10 +97,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(66, 351);
-            this.label3.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label3.Location = new System.Drawing.Point(25, 147);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 46);
+            this.label3.Size = new System.Drawing.Size(42, 19);
             this.label3.TabIndex = 4;
             this.label3.Text = "Email";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -113,10 +108,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(56, 455);
-            this.label4.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label4.Location = new System.Drawing.Point(21, 191);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(192, 46);
+            this.label4.Size = new System.Drawing.Size(76, 19);
             this.label4.TabIndex = 5;
             this.label4.Text = "Mobile No";
             // 
@@ -124,10 +118,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(54, 570);
-            this.label5.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label5.Location = new System.Drawing.Point(20, 239);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(200, 46);
+            this.label5.Size = new System.Drawing.Size(79, 19);
             this.label5.TabIndex = 6;
             this.label5.Text = "User Name";
             // 
@@ -135,10 +128,9 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(54, 678);
-            this.label6.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label6.Location = new System.Drawing.Point(20, 284);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(173, 46);
+            this.label6.Size = new System.Drawing.Size(69, 19);
             this.label6.TabIndex = 7;
             this.label6.Text = "Password";
             // 
@@ -146,10 +138,9 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(54, 804);
-            this.label7.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label7.Location = new System.Drawing.Point(20, 337);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(316, 46);
+            this.label7.Size = new System.Drawing.Size(122, 19);
             this.label7.TabIndex = 8;
             this.label7.Text = "Confirm Password";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -157,58 +148,52 @@
             // txtLastName
             // 
             this.txtLastName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLastName.Location = new System.Drawing.Point(478, 229);
-            this.txtLastName.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.txtLastName.Location = new System.Drawing.Point(179, 96);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(464, 53);
+            this.txtLastName.Size = new System.Drawing.Size(176, 26);
             this.txtLastName.TabIndex = 9;
             // 
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(478, 335);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.txtEmail.Location = new System.Drawing.Point(179, 140);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(464, 53);
+            this.txtEmail.Size = new System.Drawing.Size(176, 26);
             this.txtEmail.TabIndex = 10;
             this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // txtMobile
             // 
             this.txtMobile.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMobile.Location = new System.Drawing.Point(478, 440);
-            this.txtMobile.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.txtMobile.Location = new System.Drawing.Point(179, 185);
             this.txtMobile.Name = "txtMobile";
-            this.txtMobile.Size = new System.Drawing.Size(464, 53);
+            this.txtMobile.Size = new System.Drawing.Size(176, 26);
             this.txtMobile.TabIndex = 11;
             // 
             // txtUserName
             // 
             this.txtUserName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserName.Location = new System.Drawing.Point(478, 554);
-            this.txtUserName.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.txtUserName.Location = new System.Drawing.Point(179, 232);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(464, 53);
+            this.txtUserName.Size = new System.Drawing.Size(176, 26);
             this.txtUserName.TabIndex = 12;
             // 
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(478, 672);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.txtPassword.Location = new System.Drawing.Point(179, 282);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(464, 53);
+            this.txtPassword.Size = new System.Drawing.Size(176, 26);
             this.txtPassword.TabIndex = 13;
             // 
             // txtConfirm
             // 
             this.txtConfirm.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirm.Location = new System.Drawing.Point(478, 798);
-            this.txtConfirm.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.txtConfirm.Location = new System.Drawing.Point(179, 335);
             this.txtConfirm.Name = "txtConfirm";
             this.txtConfirm.PasswordChar = '*';
-            this.txtConfirm.Size = new System.Drawing.Size(464, 53);
+            this.txtConfirm.Size = new System.Drawing.Size(176, 26);
             this.txtConfirm.TabIndex = 14;
             // 
             // panel1
@@ -230,10 +215,10 @@
             this.panel1.Controls.Add(this.btnRegister);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(52, 232);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel1.Location = new System.Drawing.Point(20, 97);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1072, 1149);
+            this.panel1.Size = new System.Drawing.Size(402, 482);
             this.panel1.TabIndex = 15;
             // 
             // WarningFN
@@ -241,10 +226,10 @@
             this.WarningFN.AutoSize = true;
             this.WarningFN.Font = new System.Drawing.Font("Century", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WarningFN.ForeColor = System.Drawing.Color.Red;
-            this.WarningFN.Location = new System.Drawing.Point(476, 153);
-            this.WarningFN.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.WarningFN.Location = new System.Drawing.Point(178, 64);
+            this.WarningFN.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.WarningFN.Name = "WarningFN";
-            this.WarningFN.Size = new System.Drawing.Size(92, 33);
+            this.WarningFN.Size = new System.Drawing.Size(37, 15);
             this.WarningFN.TabIndex = 15;
             this.WarningFN.Text = "label9";
             this.WarningFN.Visible = false;
@@ -252,10 +237,10 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.label8);
-            this.panel2.Location = new System.Drawing.Point(2, 1380);
-            this.panel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel2.Location = new System.Drawing.Point(1, 579);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1222, 126);
+            this.panel2.Size = new System.Drawing.Size(458, 53);
             this.panel2.TabIndex = 16;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -265,9 +250,9 @@
             this.label8.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Transparent;
             this.label8.Location = new System.Drawing.Point(0, 0);
-            this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(1216, 126);
+            this.label8.Size = new System.Drawing.Size(456, 53);
             this.label8.TabIndex = 18;
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label8.UseCompatibleTextRendering = true;
@@ -277,10 +262,10 @@
             this.OWNER.BackColor = System.Drawing.SystemColors.Highlight;
             this.OWNER.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OWNER.ForeColor = System.Drawing.Color.Transparent;
-            this.OWNER.Location = new System.Drawing.Point(2, -2);
-            this.OWNER.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.OWNER.Location = new System.Drawing.Point(1, -1);
+            this.OWNER.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.OWNER.Name = "OWNER";
-            this.OWNER.Size = new System.Drawing.Size(1216, 246);
+            this.OWNER.Size = new System.Drawing.Size(456, 103);
             this.OWNER.TabIndex = 17;
             this.OWNER.Text = "OWNER REGISTRATION";
             this.OWNER.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -288,14 +273,13 @@
             // 
             // Registration
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1216, 1505);
+            this.ClientSize = new System.Drawing.Size(456, 654);
             this.Controls.Add(this.OWNER);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
             this.Name = "Registration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registration";

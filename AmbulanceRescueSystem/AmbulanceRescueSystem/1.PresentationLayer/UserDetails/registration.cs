@@ -1,4 +1,5 @@
-﻿using AmbulanceRescueSystem._2.ApplicationLayer.UserDetails;
+﻿using AmbulanceRescueSystem._1.PresentationLayer;
+using AmbulanceRescueSystem._2.ApplicationLayer.UserDetails;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,7 +26,7 @@ namespace AmbulanceRescueSystem
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            if(txtFirstName.Text=="")
+            if (txtFirstName.Text == "")
             {
                 WarningFN.Visible = true;
                 WarningFN.Text = "First name is mandatory";
@@ -44,7 +45,7 @@ namespace AmbulanceRescueSystem
                 };
 
                 string Response = user.ImplementBusinessLogics(user);
-                if (Response != "Data updated successfully")
+                if (Response != "Congrats!!! Your account is sucessfully registered")
                 {
 
                     if (Response == "invalid name")
@@ -55,10 +56,18 @@ namespace AmbulanceRescueSystem
 
                 }
                 MessageBox.Show(Response);
-            }
-           
+                if (Response == "Congrats!!! Your account is sucessfully registered")
+                {
+                    this.Hide();
+                    Login objLogin = new Login();
+                    objLogin.Show();
+                }
 
-            
+            }
+
+
+
+
         }
 
         private void Registration_Load(object sender, EventArgs e)
